@@ -1,0 +1,239 @@
+/*-----------------------------------NO RESPONSIVO-------------------------------------*/ 
+html {
+    background-color: lightgrey;
+    font-size: 10px;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#h1-impact {
+    padding-top: 6.25rem;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    animation-name: cambios;
+    animation-delay: 4s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes gradual-color {
+    from {background-color: #0080c0;}
+    to {background-color: black;}
+}
+
+@keyframes cambios {
+    33% {color: purple;}
+    66% {color: green;}
+    100% {color: black;}
+}
+
+/*-----------------------------------FIN NO RESPONSIVO-------------------------------------*/
+
+/*-----------------------------------HEADER-------------------------------------*/
+header {
+    background-color: #0080c0 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    max-height: 4rem;
+}
+    #header-img {
+        max-height: 80%;
+        width: auto;
+        max-width: 25%;
+        padding: 0.5rem 0.5rem;
+        margin: 0.5rem 0;
+    }
+
+/*-------------------------------FIN HEADER-------------------------------------*/
+
+/*-------------------------------FORMULARIO-------------------------------------*/
+#form {
+    margin: 1.5625rem auto auto;
+    width: fit-content;
+    min-height: 6.4375rem;
+
+}
+
+    #form > input[type="email"] {
+        margin-right: 0.75rem;
+        width: 12.5rem;
+        margin-top: 1.375rem;
+    }
+
+    #leyenda-email {
+        font-size: 0.875rem;
+        font-style: italic ;
+        width: fit-content;
+        margin-bottom: -0.25rem;
+    }
+
+    #submit {
+        height: 2.5rem;
+        width: 3.75rem;
+        border-radius: 50%;
+        background-color: #0080c0;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #submit:hover {
+        height: 3.75rem;
+        width: 3.75rem;
+        border-radius: 50%;
+        animation-name: gradual-color;
+        animation-duration: 2s;
+        background-color: black;
+        color: red;
+    }
+/*------------------------------FIN FORMULARIO----------------------------------*/
+/*------------------------------SECCIONES----------------------------------*/
+.contenedor-flex {
+    display: flex;
+    width: 85%;
+    padding-left: 12rem;
+    margin: 0.3125rem auto;
+    vertical-align: top;
+}
+
+#Productos {
+    padding-top: 5rem;
+    margin-top: -3.75rem;
+}
+
+.div-sub-titular {
+    padding-top: 6.25rem;
+    margin-top: -3.75rem;
+    margin-bottom: 0.9375rem;
+    margin-left: 12rem;
+    width: fit-content;
+}
+
+.sub-titular {
+    margin: 0;
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #2f333b;
+}
+
+.div-box, .div-box2 { 
+    display: block;
+    width: 33%;
+    height: inherit;
+    min-width: 15.625rem;
+}
+
+.div-box {
+    border: 1px solid black;            
+}
+
+.div-box2 {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+
+}
+.izq {
+    margin-left: 0.625rem;
+    
+}
+.der {
+    margin-right: 0.625rem;
+}
+.med {
+    margin: 0 0.625rem;
+}
+
+.div-box2 > ul {
+    width: fit-content;
+    height: 100%;
+}
+
+.div-box2 > ul > li {
+    width: 96%;
+}
+
+.div-box p {
+    margin: 0 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+    figure img {
+        max-height: 30vh;
+        min-height: 5.5rem;
+        max-width: 80%;
+        width: auto;
+        height: auto;
+        overflow:visible ;
+        display: block;
+        margin: auto;
+    }
+
+figcaption {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 0.4rem;
+}
+
+.produ {
+    display: block;
+    font-size: 1.875rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#Videos {
+    padding-top: 5rem;
+    min-height: auto;
+}
+
+.div-iframe {
+    height: auto;
+    width: 33%;
+    min-width: 15.625rem;
+}
+
+.iframe-izq {
+    width: 100%;
+    aspect-ratio: 1.77 / 1;
+}
+
+.iframe-med {
+    width: 100%;
+    aspect-ratio: 1.48 / 1;
+}
+
+.iframe-der {
+    width: 100%;
+    aspect-ratio: 1.77 / 1;
+}
+/*------------------------------SECCIONES----------------------------------*/
+
+.zoom:hover {
+    transform: scale(1.5);
+}
+
+@media (min-width: 768px) {                     /*PARA DESKTOP O LAPTOP*/
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px){                      /*PARA DISPOSITIVOS MOBILES*/
+    #submit {
+        font-size: 0.8rem;
+    }
+    .contenedor-flex {
+        padding-left: 0;
+    }
+}

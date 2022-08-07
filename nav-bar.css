@@ -1,0 +1,78 @@
+@media (max-width: 767px){
+    nav {
+        max-width: 75%;
+        display: block;
+        width: 75%;
+        height: 10%;
+        max-height: 4rem;
+        background-color: lightgreen;
+        top: 0;
+        right: 0;
+        position: fixed;
+    }
+
+        .nav-link {
+            color: #dfdfe2;
+            margin: 0 0.2rem;
+            padding: 0.2rem;
+            display: block;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .nav-link:hover {
+            background-color: #1f0eb4;
+            color: #ffff79;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: 900;
+            font-size: 1.3rem;
+        }
+
+        .h2-nav {
+            color: black;
+            font-size: 1.6rem;
+            margin: auto;
+            width: fit-content;
+            height: fit-content;
+        }
+    
+}
+
+@media (min-width: 768px) {                     /* PARA DESKTOP O LAPTOP */ 
+    nav {
+        display: block;
+        width: fit-content;
+        height: 100%;
+        background-color: #0080c0;
+        padding-right: 0.3rem;
+        top: min(10%, 4rem);
+        position: fixed; 
+    }
+
+    .h2-nav {
+            color: black;
+            font-size: 1.6rem;
+            margin: auto;
+            width: fit-content;
+            height: fit-content;
+    }
+
+    .nav-link {
+        color: #dfdfe2;
+        margin: 0 0.2rem;
+        padding: 0.2rem;
+        display: block;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .nav-link:hover {
+        background-color: #1f0eb4;
+        color: #ffff79;
+        cursor: pointer;
+        border-radius: 5px;
+            font-weight: 900;
+        font-size: 1.3rem;
+    }
+}

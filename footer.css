@@ -1,0 +1,57 @@
+footer {
+    background-color: #2f333b;
+    bottom: 0;
+    height: 8%;
+    width: 100%;
+    margin: 0;
+    margin-bottom: -1rem;
+    padding: 0;
+
+}
+
+.icons {              /* resize de imagenes del footer*/
+    width: 3rem;
+    height: auto;
+    margin-top: 0.3125rem;
+}
+
+#derechos {
+    color: whitesmoke;
+    padding-bottom: 1.25rem;
+}
+
+#derechos > a {
+    color: aqua;
+}
+
+.div-footer {
+    padding-top: 0.25rem;
+    text-align: center; /* Alineando el footer*/
+}
+
+#Mail {
+    float: none;
+    position: fixed;
+    right: 0.3125rem;
+    bottom: 0;
+}
+
+#Mail:hover {
+    transform:scale(1.8);
+    right: 1.5625rem;
+    bottom: 1.25rem;
+}
+
+#WAPP {
+    float: none;
+    position: fixed;
+    left: 0.3125rem;
+    bottom: 0.3125rem;
+}
+
+#TG {
+    float: none;
+    position: fixed;
+    left: 0.3125rem;
+    bottom: 3.625rem;
+}
